@@ -29,6 +29,7 @@ def plot_shortest_path(G, nodes):
     nx.draw_networkx_nodes(G, pos, nodelist=[nodes[0], nodes[1]], node_color='#EE1289', node_size=100)
     nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='#EE1289', width=3)
     plt.title('Path between users {} and {}'.format(nodes[0], nodes[1]))
+    plt.savefig('social_graph.png')
     plt.show()
 
 '''Load the data and explore it'''
